@@ -1,8 +1,88 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06BBCC;
-    --light: #F0FBFC;
-    --dark: #181d38;
+    --primary: #006B3F;
+    --light: #F4F8F5;
+    --dark: #111111;
+    --kenya-red: #BB1E10;
+    --kenya-gold: #D6A328;
+}
+
+body {
+    color: #4a554f;
+    background: #ffffff;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #004d2d;
+    border-color: #004d2d;
+}
+
+.navbar-brand h2 {
+    color: var(--primary) !important;
+    letter-spacing: .02em;
+}
+
+.navbar-brand h2::after {
+    content: "  |  Learn. Grow. Lead.";
+    color: var(--kenya-red);
+    display: inline-block;
+    font-size: .38em;
+    font-weight: 700;
+    letter-spacing: .08em;
+    vertical-align: middle;
+}
+
+.navbar .nav-link {
+    color: #26352d !important;
+    font-weight: 700;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--primary) !important;
+}
+
+.page-header {
+    background: linear-gradient(135deg, rgba(0, 107, 63, .96), rgba(17, 17, 17, .9)),
+        url("../img/carousel-2.jpg") center/cover;
+}
+
+.service-item,
+.course-item,
+.team-item {
+    border-top: 3px solid transparent;
+    transition: .3s ease;
+}
+
+.service-item:hover,
+.course-item:hover,
+.team-item:hover {
+    border-top-color: var(--kenya-red);
+    transform: translateY(-4px);
+}
+
+.section-title::before,
+.section-title::after {
+    background: var(--kenya-red) !important;
+}
+
+.footer {
+    background: #111111 !important;
+    border-top: 5px solid var(--kenya-red);
 }
 
 .fw-medium {
